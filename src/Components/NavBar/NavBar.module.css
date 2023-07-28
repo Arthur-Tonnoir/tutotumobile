@@ -1,11 +1,37 @@
-.link{
+li{
+    justify-content: center;
+}
+
+.link1{
     color: white;
     text-decoration: none;
     background-color: gray;
     border-radius: 30px;
     padding: 10px;
+    grid-column: 1;
+}
+
+.link2{
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 30px;
+    padding: 10px;
+    grid-column: 2;
+}
+
+.link3{
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 30px;
+    padding: 10px;
+    grid-column: 3;
 }
 .container{
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
     list-style: none;
 }
