@@ -10,7 +10,8 @@ function Acceuil(){
     const [vehicules, setVehicules] = useState(vechiules)
 
     let voiture = vehicules.map((vehicule, index) => {
-        return (
+        if(vehicule.isLocation === false)
+        {return (
             <Voiture
             key={index}
             nom={vehicule.nom}
@@ -25,7 +26,9 @@ function Acceuil(){
             cvfiscaux={vehicule.cvfiscaux}
             porte={vehicule.porte}
             />
-        );
+        );}else{
+            return null
+        }
     })
 
     return (
