@@ -1,19 +1,25 @@
 import React, { useState } from 'react';
-import Voiture from '../../Components/Voiture/Voiture'
+import Voiture from '../../Components/Voiture/Voiture';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import css from './Accueil.module.css'
 
 import vechiules from '../../data';
+import { Carousel } from 'react-responsive-carousel';
 
 function Acceuil(){
 
-    const [vehicules, setVehicules] = useState(vechiules)
+    const [vehicules, setVehicules] = useState(vechiules);
 
-    let voiture = vehicules.map((vehicule, index) => {
-        if(vehicule.isLocation === false)
-        {return (
-            <Voiture
-            key={index}
+    return (
+        <div className={css.main}>
+            
+            <h1 className={css.title}>Bienvenue sur tututomobile</h1>
+            <Carousel showArrows={true}>
+                {vehicules.map((vehicule,index) => (
+                    <div key={vehicule.id}>
+                        <Voiture
+            key={vehicule.id}
             nom={vehicule.nom}
             marque={vehicule.marque}
             modele={vehicule.modele}
@@ -26,17 +32,9 @@ function Acceuil(){
             cvfiscaux={vehicule.cvfiscaux}
             porte={vehicule.porte}
             />
-        );}else{
-            return null
-        }
-    })
-
-    return (
-        <div className={css.main}>
-            <h1 className={css.title}>Bienvenue sur tututomobile</h1>
-            <div className={css.voitures}>
-                {voiture}
-            </div>
+                    </div>
+                ))}
+            </Carousel>
         </div>
     )
 }

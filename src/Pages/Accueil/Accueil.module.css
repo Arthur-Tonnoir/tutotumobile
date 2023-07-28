@@ -1,12 +1,4 @@
-.voitures{
-  display: flex;
-  flex-direction: row;
-  height: 900px;
-}
 .title{
-  color: white;
+  color: black;
   text-align: center;
-}
-.main{
-  background: url('../../assets/png/imagevoiture.png');  
 }
