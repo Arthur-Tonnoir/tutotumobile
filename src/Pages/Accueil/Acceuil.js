@@ -3,53 +3,11 @@ import Voiture from '../../Components/Voiture/Voiture'
 
 import css from './Accueil.module.css'
 
+import vechiules from '../../data';
+
 function Acceuil(){
 
-    const [vehicules, setVehicules] = useState(
-    [
-        {
-            id:1,
-            nom:"teste1",
-            marque:"Citroen",
-            modele:"2",
-            km:2563,
-            couleur:"red",
-            carburant:"Diesel",
-            isLocation:false,
-            annee:2003,
-            vitesse:"automatique",
-            cvfiscaux:0,
-            porte:3
-        },
-        {
-            id:1,
-            nom:"teste2",
-            marque:"Citroen",
-            modele:"2",
-            km:110000,
-            couleur:"vert",
-            carburant:"Essence",
-            isLocation:true,
-            annee:2003,
-            vitesse:"manuelle",
-            cvfiscaux:0,
-            porte:3
-        },
-        {
-            id:3,
-            nom:"teste3",
-            marque:"Citroen",
-            modele:"3",
-            km:2486,
-            couleur:"red",
-            carburant:"Electrique",
-            isLocation:false,
-            annee:2003,
-            vitesse:"automatique",
-            cvfiscaux:0,
-            porte:3
-        }
-    ])
+    const [vehicules, setVehicules] = useState(vechiules)
 
     let voiture = vehicules.map((vehicule, index) => {
         return (
