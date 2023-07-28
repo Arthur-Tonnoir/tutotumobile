@@ -31,9 +31,6 @@ function Voiture(props){
             <p>Km: {props.km}</p>
             <p>Couleur: {props.couleur}</p>
             <p>Carburant : {props.carburant}</p>
-            {props.isLocation === true ? 
-                <p>A louer</p> : null
-            }
             {afficheCompleteCaracterique ?
                 <div>
                     <p>Annee : {props.annee}</p>
