@@ -1,0 +1,12 @@
+.voitures{
+  display: flex;
+  flex-direction: row;
+  height: 900px;
+}
+.title{
+  color: white;
+  text-align: center;
+}
+.main{
+  background: url('../../assets/png/imagevoiture.png');  
+}
