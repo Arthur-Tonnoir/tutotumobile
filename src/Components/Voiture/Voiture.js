@@ -12,7 +12,7 @@ function Voiture(props){
     }
 
     const Voiture = styledComponent.div`
-    background-color: grey;
+    background-color: transparent;
     cursor: pointer;
     margin: 0 10px;
     padding: 5px 0;
