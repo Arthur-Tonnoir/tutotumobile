@@ -11,7 +11,8 @@ const vechiules = [
         annee:2003,
         vitesse:"automatique",
         cvfiscaux:0,
-        porte:3
+        porte:3,
+        imageSrc: "../../assets/png/imagevoiture.png"
     },
     {
         id:2,
