@@ -15,10 +15,12 @@ function Acceuil(){
         <div className={css.main}>
             
             <h1 className={css.title}>Bienvenue sur tututomobile</h1>
-            <Carousel showArrows={true}>
+            <Carousel showArrows={true} autoPlay className={css.carouselVoiture}>
+                
                 {vehicules.map((vehicule,index) => (
                     <div key={vehicule.id}>
-                        <Voiture
+                        <img alt='imageVoiture' src={vehicule.image} className='slide.image'/>
+                        <Voiture className='overlay'
             key={vehicule.id}
             nom={vehicule.nom}
             marque={vehicule.marque}

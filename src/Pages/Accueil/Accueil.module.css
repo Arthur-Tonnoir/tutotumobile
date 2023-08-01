@@ -1,4 +1,18 @@
 .title{
-  color: black;
+  color: white;
   text-align: center;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-column: 1;
+  height: 100%;
+  
+}
+
+.carouselImg{
+  height: 100%;
+  width: 100%;
+  background: url('../../assets/png/imagevoiture.png');
 }
