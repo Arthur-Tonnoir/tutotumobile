@@ -19,7 +19,7 @@ function Acceuil(){
                 
                 {vehicules.map((vehicule,index) => (
                     <div key={vehicule.id}>
-                        <img alt='imageVoiture' src={vehicule.image} className='slide.image'/>
+                        <img alt={vehicule.nom} src={vehicule.imageSrc} className='slide.image'/>
                         <Voiture className='overlay'
             key={vehicule.id}
             nom={vehicule.nom}
